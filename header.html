@@ -10,16 +10,16 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav " style="width: 100%;">
                         <li class="nav-item ms-auto">
-                            <a class="nav-link active" aria-current="page" href="?go=project" value="project">作品集</a>
+                            <a class="nav-link active" aria-current="page" href="?go=project" onclick="loadpage('./project.html')">作品集</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="?go=about" value="about">關於我</a>
+                            <a class="nav-link" href="?go=about" onclick="loadpage('./about.html')">關於我</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="?go=contact" value="contact">連絡資訊</a>
+                            <a class="nav-link" href="?go=contact" onclick="loadpage('./contact.html')">連絡資訊</a>
                         </li>
                         <li class="nav-item ms-auto">
-                            <a class="nav-link " href="?go=login" value="login">登入</a>
+                            <a class="nav-link " href="?go=login" onclick="loadpage('./login.html')">登入</a>
                         </li>
                     </ul>
                 </div>
@@ -28,7 +28,7 @@
 
 </div>
 
-<script>
+<!-- <script>
     $(document).ready(function () {
         const links = $('.nav-link');
         let getUrl = new URL(location.href);
@@ -47,4 +47,4 @@
         
     })
     // })
-</script>
+</script> -->

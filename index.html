@@ -47,8 +47,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
+    function loadpage(page){
+    
+    }
     $(document).ready(function () {
-        $('#header').load('header.html'); //載入header
+        $.loadpage('header.html'); //載入header
         let go = $('#go');
         let getUrl = new URL(location.href);
         // console.log('getUrlString',getUrl);
