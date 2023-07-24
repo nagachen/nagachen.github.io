@@ -11,7 +11,7 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
-    
+
 
     <style>
         body {
@@ -47,16 +47,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    function loadpage(page){
-    
-    }
     $(document).ready(function () {
-        $.loadpage('header.html'); //載入header
-        let go = $('#go');
-        let getUrl = new URL(location.href);
-        // console.log('getUrlString',getUrl);
-        let url = getUrl.searchParams.get('go');
-        go.load(url + ".html");
+
+        $('#header').load('header.html', function () {
+            $('.myBtn').click(function () {
+
+                $('.myBtn').removeClass('text-light');
+                $(this).addClass('text-light');
+               $("#go").load($(this).data('name') + ".html");
+            })
+        });
+
+
     })
     //pushstate
 </script>

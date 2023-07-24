@@ -8,18 +8,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav " style="width: 100%;">
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link active" aria-current="page" href="?go=project" onclick="loadpage('./project.html')">作品集</a>
+                    <ul class="navbar-nav text-center" style="width: 100%;">
+                        <li class="nav-item ms-lg-auto mx-lg-2 ">
+                            <button type="button" data-name="project" class="btn   fs-4 myBtn" > 作品集</button>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?go=about" onclick="loadpage('./about.html')">關於我</a>
+                        <li class="nav-item mx-lg-2" >                           
+                           <button type="button" data-name="about" class="btn  fs-4 myBtn"> 關於我</button>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="?go=contact" onclick="loadpage('./contact.html')">連絡資訊</a>
-                        </li>
-                        <li class="nav-item ms-auto">
-                            <a class="nav-link " href="?go=login" onclick="loadpage('./login.html')">登入</a>
+                        <li class="nav-item mx-lg-2" >                           
+                            <button type="button" data-name="contact" class="btn  fs-4 myBtn"> 連絡資訊</button>
+                         </li>
+                        
+                        <li class="nav-item ms-lg-auto">
+                            <button type="button" data-name="login" class="btn text-light fs-4 "> 登入</button>
                         </li>
                     </ul>
                 </div>
@@ -28,23 +29,3 @@
 
 </div>
 
-<!-- <script>
-    $(document).ready(function () {
-        const links = $('.nav-link');
-        let getUrl = new URL(location.href);
-        let url = getUrl.searchParams.get('go');
-        $(links).attr('class', 'nav-link');
-        //  console.log(links);
-        links.each(function () {
-            let now = $(this).attr('value').toLowerCase();
-            console.log(now);
-            if (now == url) {
-                $(this).attr('class', 'nav-link active');
-                
-            }
-        });
-        
-        
-    })
-    // })
-</script> -->
