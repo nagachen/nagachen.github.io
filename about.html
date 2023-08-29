@@ -4,38 +4,119 @@
         font-size: 28px;
         font-weight: bold;
     }
-.img{
-   
-    width: 50vw;
-}
+
+    .img {
+
+        width: 50vw;
+    }
+
+    .row {
+        height: 90vh;
+    }
+
     .about>div {
         margin-top: 20px;
     }
 </style>
-<div class="container about">
-    <div class="row d-flex flex-wrap-reverse">
-        <div class="col-12  col-md-6 text-light">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, suscipit aperiam labore maxime fuga
-            fugiat libero totam distinctio perspiciatis voluptate dolorum harum numquam deserunt beatae alias esse amet
-            ad aliquid?
-        </div>
-        <div class="col-12  col-md-6"><img src="https://picsum.photos/600/300" width="100%"></div>
-    </div>
 
-    <div class="row">
-        <div class="col-12  col-md-6"><img src="https://picsum.photos/id/13/600/300" width="100%"></div>
-        <div class="col-12  col-md-6 text-light">
-           adipisicing elit. Similique quo voluptatum iste animi ullam laborum
-            earum, repellat magni fugiat facere? Nisi odit perferendis numquam mollitia veniam earum magnam non
-            suscipit.
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container w-75">
+                <div class="row d-flex flex-wrap-reverse align-items-center">
+                    <div class="col-12  col-md-6 text-light fs-3">
+                        <h2>英文姓名：nagachen</h2>
+
+                        生長於台灣....<br>
+                        由於對資訊有一份喜愛<br>
+                        於中年時轉行投入資訊產業<br>
+                        目前正在學習網頁相關技術中. . .
+
+                    </div>
+                    <div class="col-12  col-md-6">
+                        <div style="padding: 7px;border-radius: 7px;background: white;"><img
+                                src="./pic/aboutme.jpg" width="100%" style="border-radius: 7px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container w-75">
+                <div class="row d-flex flex-wrap-reverse align-items-center">
+                    <div class="col-12  col-md-6 text-light fs-2">
+                        <table>
+                            <tr>
+                                <td colspan="2" style="text-align:center">
+                                    <h2>專業技能1</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <p>網頁設計相關:</p>
+                                </td>
+                                <td style="text-align: left;">
+                                    <p>PHP<br>
+                                        JAVASCRIP<br>
+                                        HTML<br>
+                                        CSS<br></p>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <div class="col-12  col-md-6">
+                        <div style="padding: 7px;border-radius: 7px;background: white;"><img
+                                src="./pic/software.jpg" width="100%" style="border-radius: 7px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container w-75">
+                <div class="row d-flex flex-wrap-reverse align-items-center">
+                    <div class="col-12  col-md-6 text-light fs-2">
+                        <table>
+                            <tr>
+                                <td colspan="2" style="text-align:center">
+                                    <h2>專業技能2</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">
+                                    <p>MIS知識相關:</p>
+                                </td>
+                                <td style="text-align: left;">
+                                    <p> CCNA<br>
+                                        RHCSA<br>
+                                        電腦組裝維護<br>
+                                        WINDOWS相關</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="col-12  col-md-6">
+                        <div style="padding: 7px;border-radius: 7px;background: white;"><img
+                                src="./pic/linux.jpg" width="100%" style="border-radius: 7px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row d-flex flex-wrap-reverse">
-        <div class="col-12  col-md-6 text-light" >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, quasi! Labore, tenetur aspernatur. Pariatur,
-            ab voluptatibus nesciunt ad sint reprehenderit repudiandae magni tempora, culpa ducimus delectus deserunt
-            vel mollitia ea!
-        </div>
-        <div class="col-12  col-md-6"><img src="https://picsum.photos/id/213/600/300" width="100%"></div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
